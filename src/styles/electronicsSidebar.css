@@ -1,0 +1,94 @@
+/* OVERLAY */
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 99999;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* SIDEBAR */
+.product-sidebar {
+    position: absolute;
+    top: 0;
+    right: -450px;
+    width: 400px;
+    max-width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    transition: right 0.35s ease;
+    overflow-y: auto;
+}
+
+.product-sidebar.open {
+    right: 0;
+}
+
+/* IMAGE */
+.product-sidebar img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* CLOSE */
+.close-btn-elec {
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.close_icon_color,
+.h2_color{
+    color: #682899;
+}
+
+
+/* PRICE */
+.sidebar-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* DESCRIPTION */
+.sidebar-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.sidebar-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.cart-btn,
+.wishlist-btn-elec {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cart-btn {
+    background: black;
+    color: white;
+}
+
+.wishlist-btn-elec {
+    background: #eee;
+}

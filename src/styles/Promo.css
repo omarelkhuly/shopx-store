@@ -1,0 +1,84 @@
+/* src/styles/Promo.css */
+.promo-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promo-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.promo-title {
+    margin-bottom: 15px;
+}
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+
+    /* 🔥 مهم عشان الـ absolute */
+    position: relative;
+}
+
+.mini-card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.mini-card-title {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.mini-card-price {
+    font-size: 13px;
+    color: green;
+}
+
+/* ========================= */
+/* 🔥 NEW ADDITIONS */
+/* ========================= */
+
+/* ❤️ Wishlist button */
+.mini-card button:first-of-type {
+    border: none;
+    background: #ff8521;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    height: 32px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.mini-card button:first-of-type:hover {
+    transform: scale(1.1);
+}
+
+/* 🛒 Add to cart button */
+.mini-add-to-cart {
+    margin-top: 8px;
+    padding: 6px 10px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.mini-add-to-cart:hover {
+    background: #333;
+    transform: scale(1.05);
+}

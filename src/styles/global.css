@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: 0 16px;
+}

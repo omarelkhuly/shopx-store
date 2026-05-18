@@ -1,0 +1,12 @@
+:root {
+
+  --color-primary: #2563eb;
+  --color-bg: #ffffff;
+  --color-text: #111827;
+
+  --radius: 8px;
+  --transition: 0.3s;
+
+  --container-width: 1200px;
+
+}

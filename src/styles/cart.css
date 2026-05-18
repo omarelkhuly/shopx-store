@@ -1,0 +1,159 @@
+/* src/styles/cart.css */
+/* ===== Cart Page ===== */
+
+.cart-page {
+    padding: 40px 20px;
+}
+
+.cart-page h1 {
+    margin-bottom: 20px;
+}
+
+/* ===== Grid Layout ===== */
+
+.cart-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Desktop - 3 cards */
+@media (min-width: 992px) {
+    .cart-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet - 2 cards */
+@media (min-width: 576px) and (max-width: 991px) {
+    .cart-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile - 1 card */
+@media (max-width: 575px) {
+    .cart-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Cart Item Card ===== */
+
+.cart-item {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 15px;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.cart-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Title */
+.cart-item h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Price */
+.cart-item p {
+    font-weight: bold;
+}
+
+/* Buttons */
+.cart-item button {
+    padding: 8px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    opacity: 0.8;
+}
+
+/* ===== Summary ===== */
+
+.cart-summary {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+/* ===== Cart Summary ===== */
+
+.cart-summary {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #eee;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-summary h3 {
+    margin-bottom: 15px;
+}
+
+/* rows */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* total */
+.summary-row.total {
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* button */
+.checkout-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: black;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-button:hover {
+    opacity: 0.85;
+}
+
+/* disabled */
+.checkout-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

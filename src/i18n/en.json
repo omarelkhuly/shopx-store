@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "offers": "Offers",
+    "categories": "Categories",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "search": "Search products..."
+  },
+  "newsletter": {
+    "title": "Subscribe to our newsletter",
+    "placeholder": "Enter your email",
+    "button": "Subscribe"
+  }
+}

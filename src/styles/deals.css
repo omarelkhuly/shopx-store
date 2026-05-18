@@ -1,0 +1,144 @@
+/* src/styles/deals.css */
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* 🔥 CARD */
+.deal-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔥 IMAGE WRAPPER */
+.deal-img-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.deal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* 🔥 DISCOUNT */
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: crimson;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+/* 🔥 ADD BUTTON */
+.add-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: gold;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+    background: orange;
+}
+
+/* 🔥 INFO */
+.deal-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.deal-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.price {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ❤️ Wishlist Button */
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.wishlist-btn svg {
+    color: #555;
+}
+
+/* لما يكون في المفضلة */
+.wishlist-btn.active svg {
+    color: red;
+}
+
+/* hover effect */
+.wishlist-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+    .deals-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 📱 Small Tablet */
+@media (max-width: 768px) {
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+    .deals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .deal-card img {
+        height: 200px;
+    }
+}

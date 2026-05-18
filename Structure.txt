@@ -1,0 +1,331 @@
+Structure Project
+src
+│
+├──    app
+│   ├──    App.jsx
+│   ├──    providers.jsx
+│   ├──    AppRoutes.jsx
+│   └──     ProtectedRoute.jsx
+│
+├──    core
+│
+│   ├──    contexts
+│   │   ├──    CartContext.jsx
+│   │   ├──    WishlistContext.jsx
+│   │   ├──    ThemeContext.jsx
+│   │   ├──    LanguageContext.jsx
+│   │   ├──    ChatContext.jsx
+│   │   ├──    LoadingContext.jsx
+│   │   └──     NotificationContext.jsx
+│   │   ├──   AuthContext.jsx
+│   │
+│   ├──    hooks
+│   │   ├──    useCart.js
+│   │   ├──    useWishlist.js
+│   │   ├──    useTheme.js
+│   │   ├──    useLanguage.js
+│   │   ├──    useChatbot.js
+│   │   └──     useLocalStorage.js
+│   │
+│   ├──    utils
+│   │   ├──    storage.js
+│   │   ├──    priceFormat.js
+│   │   ├──    discount.js
+│   │   ├──    searchEngine.js
+│   │   └──     debounce.js
+│   │
+│   └──     constants
+│       ├──    routes.js
+│       ├──    config.js
+│       └──     breakpoints.js
+│
+├──    features
+│
+├──    deals
+│   ├──   pages
+│   │   └──    DealsPage.jsx
+│   ├──   components
+│   │   └──    DealsSidebar.jsx
+│   ├── data
+│   │   └── dealsData.js
+└── electronics
+│   ├── pages
+│     └── ElectronicsPage.jsx
+│   ├── components
+│   │   ├── ElectronicsSection.jsx
+│   │   ├── ElectronicsSlider.jsx
+│   │   ├── ProductSidebar.jsx
+│   │   └── ElectronicsCard.jsx
+│   └── data
+│       └── electronicsData.js
+│       └── sectionsData.js
+└── mobiles
+│   ├── pages
+│   │   └── MobilesPage.jsx
+│   │
+│   ├── components
+│   │   ├── MobilesSection.jsx
+│   │   ├── MobilesSlider.jsx
+│   │   ├── MobilesCard.jsx
+│   │   └── MobilesSidebar.jsx
+│   │
+│   └── data
+│       ├── mobilesData.js
+│       └── sectionsData.js
+├──    auth
+│   ├──   pages
+│   │   └──    Auth.jsx
+├──    home
+│   ├──    pages
+│   │   └──     HomePage.jsx
+│   │
+│   ├──    components
+│   │   ├──    HeroSection.jsx
+│   │   ├──    HeroSlider.jsx
+│   │   │
+│   │   ├──    CategoriesPreview.jsx
+│   │   ├──    CategoryPreviewCard.jsx
+│   │   │
+│   │   ├──    FeaturedProducts.jsx
+│   │   ├──    FeaturedProductCard.jsx
+│   │   │
+│   │   ├──    FlashSaleSection.jsx
+│   │   ├──    FlashSaleTimer.jsx
+│   │   │
+│   │   ├──    BestSellerSection.jsx
+│   │   ├──    TrendingProducts.jsx
+│   │   │
+│   │   ├──    PromoBanner.jsx
+│   │   ├──    PromoGrid.jsx
+│   │   │
+│   │   ├──    BrandsSection.jsx
+│   │   ├──    BrandCard.jsx
+│   │   │
+│   │   ├──    RecommendedSection.jsx
+│   │   │
+│   │   ├──    RecentlyViewedSection.jsx
+│   │   │
+│   │   ├──    NewsletterSection.jsx
+│   │   │
+│   │   └──     HomeSkeleton.jsx
+│   │
+│   ├──    hooks
+│   │   └──     useHomeData.js
+│   │
+│   └──     data
+│       ├──    homeBanners.js
+│       ├──    featuredProducts.js
+│       └──     brands.js
+
+│   ├──    products
+│   │   ├──    components
+│   │   │   ├──    ProductCard.jsx
+│   │   │   ├──    ProductGallery.jsx
+│   │   │   ├──    ProductFilters.jsx
+│   │   │   ├──    ProductRating.jsx
+│   │   │   ├──    ProductSkeleton.jsx
+│   │   │   └──     ProductVariants.jsx
+│   │   │
+│   │   ├──    pages
+│   │   │   ├──    ProductsPage.jsx
+│   │   │   └──     ProductDetailsPage.jsx
+│   │   │
+│   │   ├──    hooks
+│   │   │   └──     useProducts.js
+│   │   │
+│   │   └──     data
+│   │       └──     products.js
+│
+│   ├──    categories
+│   │   ├──    components
+│   │   │   ├──    CategoryCard.jsx
+│   │   │   └──     CategoryList.jsx
+│   │   │
+│   │   └──     data
+│   │       └──     categories.js
+│
+│   ├──    cart
+│   │   ├──    components
+│   │   │   ├──    CartItem.jsx
+│   │   │   ├──    CartSummary.jsx
+│   │   │   └──     MiniCart.jsx
+│   │   │
+│   │   └──     pages
+│   │       └──     CartPage.jsx
+│
+│   ├──    wishlist
+│   │   └──     pages
+│   │       └──     WishlistPage.jsx
+│
+│   ├──    offers
+│   │   ├──    components
+│   │   │   └──     OfferCard.jsx
+│   │   │
+│   │   └──     data
+│   │       └──     offers.js
+│
+│   ├──    marketing
+│   │   ├──    components
+│   │   │   ├──    HeroBanner.jsx
+│   │   │   ├──    FeaturedProducts.jsx
+│   │   │   └──     FlashSale.jsx
+│
+│   ├──    search
+│   │   ├──    components
+│   │   │   ├──    SearchBar.jsx
+│   │   │   ├──    SearchSuggestions.jsx
+│   │   │   └──     SearchResults.jsx
+│
+│   ├──    filters
+│   │   └──     components
+│   │       └──     FilterSidebar.jsx
+│
+│   ├──    sorting
+│   │   └──     components
+│   │       └──     SortDropdown.jsx
+│
+│   ├──    pagination
+│   │   └──     hooks
+│   │       └──     useInfiniteScroll.js
+│
+│   ├──    recommendations
+│   │   └──     components
+│   │       └──     RecommendedProducts.jsx
+│
+│   ├──    recentlyViewed
+│   │   ├──    hooks
+│   │   │   └──     useRecentlyViewed.js
+│   │   └──     components
+│   │       └──     RecentlyViewed.jsx
+│
+│   ├──    compare
+│   │   ├──    components
+│   │   │   └──     CompareTable.jsx
+│   │   └──     pages
+│   │       └──     ComparePage.jsx
+│
+│   ├──    quickview
+│   │   └──     components
+│   │       └──     QuickViewModal.jsx
+│
+│   ├──    variants
+│   │   └──     components
+│   │       └──     VariantSelector.jsx
+│
+│   ├──    inventory
+│   │   └──     components
+│   │       └──     StockIndicator.jsx
+│
+│   ├──    coupons
+│   │   └──     components
+│   │       └──     CouponInput.jsx
+│
+│   ├──    socialProof
+│   │   └──     components
+│   │       └──     PurchaseIndicator.jsx
+│
+│   ├──    reviews
+│   │   └──     components
+│   │       ├──    ReviewForm.jsx
+│   │       └──     ReviewList.jsx
+│
+│   ├──    checkout
+│   │   └──     pages
+│   │       ├──    CheckoutPage.jsx
+│   │       └──     OrderSuccess.jsx
+│
+│   ├──    gallery
+│   │   └──     components
+│   │       └──     ProductGallery.jsx
+│
+│   ├──    support
+│   │   └──     pages
+│   │       ├──    HelpCenter.jsx
+│   │       └──     FAQ.jsx
+│
+│   └──     chatbot
+│       ├──    components
+│       │   ├──    ChatWidget.jsx
+│       │   ├──    ChatWindow.jsx
+│       │   ├──    ChatMessage.jsx
+│       │   └──     ChatInput.jsx
+│       │
+│       ├──    hooks
+│       │   └──     useChatbot.js
+│       │
+│       ├──    data
+│       │   └──     botResponses.js
+│       │
+│       └──     styles
+│           └──     chatbot.css
+│
+├──    admin
+│
+│   ├──    pages
+│   │   ├──    Dashboard.jsx
+│   │   ├──    ProductsAdmin.jsx
+│   │   ├──    CategoriesAdmin.jsx
+│   │   ├──    OffersAdmin.jsx
+│   │   └──     Analytics.jsx
+│
+│   ├──    components
+│   │   ├──    AddProductForm.jsx
+│   │   ├──    EditProductForm.jsx
+│   │   ├──    AddCategoryForm.jsx
+│   │   └──     AddOfferForm.jsx
+│
+│   └──     hooks
+│       └──     useAdminProducts.js
+│
+├──    layout
+│   ├──    Header.jsx
+│   ├──    Footer.jsx
+│   ├──    Sidebar.jsx
+│   ├──    MegaMenu.jsx
+│   └──     AdminLayout.jsx
+│
+├──    ui
+│   ├── Button.jsx
+│   ├── GoToTopButton.jsx
+│   ├── Input.jsx
+│   ├── Modal.jsx
+│   ├── Loader.jsx
+│   ├── Skeleton.jsx
+│   ├── Badge.jsx
+│   ├── Toast.jsx
+│   ├── Breadcrumb.jsx
+│   └── EmptyState.jsx
+│
+├──    pwa
+│   ├──    serviceWorker.js
+│   └──     manifest.json
+│
+├──    i18n
+│   ├──    ar.json
+│   └──     en.json
+│
+├──    styles
+│   ├── global.css
+│   ├── variables.css
+│   ├── dark.css
+│   ├── layout.css
+│   └── responsive.css
+│   └── categorie.css
+│   └── Loader.css
+│   └── newsletter.css
+│   └── product.css
+│   └── SidebarMenu.css
+│   └── Promo.css
+│   └── HeroSlider.css
+│   ├── goToTop.css
+│
+├──    data
+│   ├──    products.js
+│   ├──    categories.js
+│   └──     offers.js
+│
+└──     main.jsx
+│
+└──     fontawesome.js
+
+ipconfig

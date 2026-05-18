@@ -1,0 +1,80 @@
+.electronics-section h2 {
+    margin: 10px 0px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* .swiper-slide {
+    height: 300px !important;
+} */
+
+/* IMAGE */
+.img-wrapper {
+    position: relative;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* DISCOUNT */
+.discount-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #e63946;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+/* TEXT */
+.card-body {
+    padding-top: 8px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    overflow: hidden;
+}
+
+/* PRICE */
+.price-box {
+    margin-top: 6px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.old-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 6px;
+}

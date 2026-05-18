@@ -1,0 +1,46 @@
+/* src/styles/dealsSidebar.css */
+
+.deal-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    transition: 0.4s ease;
+    z-index: 99999;
+}
+
+.deal-sidebar.open {
+    right: 0;
+}
+
+.deal-sidebar img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.add-cart-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
