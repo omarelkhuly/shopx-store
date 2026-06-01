@@ -12,57 +12,67 @@ import petsuppliesImg from "@/images/categories/petsupplies.PNG";
 const categories = [
   {
     id: 1,
-    name: "Electronics",
+    title: "Electronics",
+    slug: "electronics",
     image: electronicsImg,
   },
   {
     id: 2,
-    name: "Fashion",
+    title: "Fashion",
+    slug: "fashion",
     image: fashionImg,
   },
   {
     id: 3,
-    name: "Housewares",
+    title: "Housewares",
+    slug: "housewares",
     image: housewaresImg,
   },
   {
     id: 4,
-    name: "Sports",
+    title: "Sports",
+    slug: "sports",
     image: sportsImg,
   },
   {
     id: 5,
-    name: "Dolls and Toys",
+    title: "Dolls and Toys",
+    slug: "dolls-and-toys",
     image: dollsandtoysimg,
   },
 
   {
     id: 6,
-    name: "Appliances",
+    title: "Appliances",
+    slug: "appliances",
     image: appliancesImg,
   },
 
   {
     id: 7,
-    name: "Game Zone",
+    title: "Game Zone",
+    slug: "game-zone",
     image: gamezoneImg,
   },
 
   {
     id: 8,
-    name: "Grocery",
+    title: "Grocery",
+    slug: "grocery",
     image: groceryImg,
   },
 
   {
     id: 9,
-    name: "Beverages",
+    title: "Beverages",
+    slug: "beverages",
     image: beveragesImg,
   },
 
   {
     id: 10,
-    name: "Pet Supplies",
+    title: "Pet Supplies",
+    slug: "pet-supplies",
     image: petsuppliesImg,
   }
 ];

@@ -35,7 +35,7 @@ function MegaMenu() {
         </span>
 
         <div className="dropdown">
-          <Link to="/category/electronics">Dolls and Toys</Link>
+          <Link to="/category/dolls-and-toys">Dolls and Toys</Link>
           <Link to="/category/fashion">Fashion</Link>
           <Link to="/category/housewares">Housewares</Link>
           <Link to="/category/sports">Sports</Link>

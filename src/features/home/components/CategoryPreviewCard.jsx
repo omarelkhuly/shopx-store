@@ -1,13 +1,21 @@
 // src/features/home/components/CategoryPreviewCard.jsx
+
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "../../../styles/categorie.css";
-import { categoriesIcon } from "../data/categoriesIcon.js";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBox } from "@fortawesome/free-solid-svg-icons"
+import { faBox } from "@fortawesome/free-solid-svg-icons";
 
 const CategoryPreviewCard = ({ category }) => {
+
   return (
-    <div className="category-preview-card">
+
+    <Link
+      to={`/category/${category.slug}`}
+      className="category-preview-card"
+    >
 
       {/* Icon */}
       <div className="category-icon">
@@ -17,16 +25,16 @@ const CategoryPreviewCard = ({ category }) => {
       {/* Image */}
       <img
         src={category.image}
-        alt={category.name}
+        alt={category.title}
         className="category-preview-image"
       />
 
       {/* Title */}
       <h3 className="category-preview-title">
-        {category.name}
+        {category.title}
       </h3>
 
-    </div>
+    </Link>
   );
 };
 

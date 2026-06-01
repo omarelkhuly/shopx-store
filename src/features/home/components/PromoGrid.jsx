@@ -1,6 +1,6 @@
 // src/features/home/components/PromoGrid.jsx
 
-import productsData from "@/features/products/data/products";
+import productsData from "../../products/data/products.js";
 import "@/styles/Promo.css";
 
 // Swiper

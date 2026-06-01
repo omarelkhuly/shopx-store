@@ -33,6 +33,7 @@ src
 │   │   ├──    discount.js
 │   │   ├──    searchEngine.js
 │   │   └──     debounce.js
+│   │   └── formatSlug.js
 │   │
 │   └──     constants
 │       ├──    routes.js
@@ -144,6 +145,8 @@ src
 │   │   └──     data
 │   │       └──     categories.js
 │
+│   │   ├── pages
+│   │       └── CategoryPage.jsx
 │   ├──    cart
 │   │   ├──    components
 │   │   │   ├──    CartItem.jsx
@@ -318,6 +321,7 @@ src
 │   └── Promo.css
 │   └── HeroSlider.css
 │   ├── goToTop.css
+│   ├── categoryPage.css
 │
 ├──    data
 │   ├──    products.js

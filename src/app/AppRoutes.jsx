@@ -13,6 +13,7 @@ import Auth from "../features/auth/pages/Auth"
 import DealsPage from "../features/deals/pages/DealsPage"
 import ElectronicsPage from "../features/electronics/pages/ElectronicsPage";
 import MobilesPage from "../features/mobiles/pages/MobilesPage";
+import CategoryPage from "@/features/categories/pages/CategoryPage";
 // 🔐 Protected Route
 import ProtectedRoute from "./ProtectedRoute"
 
@@ -35,6 +36,8 @@ function AppRoutes() {
       <Route path="/electronics" element={<ElectronicsPage />} />
 
       <Route path="/mobiles" element={<MobilesPage />} />
+
+      <Route path="/category/:categoryName"element={<CategoryPage />}/>
 
       {/* ================= PROTECTED ROUTES ================= */}
 
